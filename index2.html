@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generater</title>
+    <link rel="stylesheet" href="index2.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>
+            Generate your Password
+        </h3>
+        <div id="passwordText">
+            <input type="text" value="" id="generatePassword">
+            <button id="copyBtn" onclick="copyPassword()"> Copy </button>
+        </div>
+
+        <div id="notify" class="notify"></div>
+
+        <div class="options">
+            <label><input type="checkbox" id="upperCaseCheckbox"> Upper Case</label>
+            <label><input type="checkbox" id="lowerCaseCheckbox"> Lower Case</label>
+            <label><input type="checkbox" id="symbolsCheckbox"> Symbols</label>
+            <label><input type="checkbox" id="numbersCheckbox"> Numbers</label>
+
+        </div>
+
+        <div class="generate">
+            <button id="generateBtn" onclick="generatePassword()"> Generate Password </button>
+        </div>
+
+    </div>
+    <script src=index2.js></script>
+</body>
+
+</html>
